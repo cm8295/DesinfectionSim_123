@@ -1,0 +1,44 @@
+﻿<mui:ModernWindow x:Class="Disinfection_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="DS" IsTitleVisible="True"
+        LogoData="M549.643,385.237l39.192-81.416h-147.56l51.329-107.115H640.4v-0.002h145.911L643.314,493.751
+	l-116.424,0.204l35.57,56.771l-69.36,144.734h-1.148L356.976,479.725l45.333-94.595L549.643,385.237z M249.276,605.781
+	L23.688,113.815H156.82l92.457,201.631l96.626-201.631H485.04L249.276,605.781z"
+        ContentSource="Pages/Login_user_Training.xaml"  SizeToContent="WidthAndHeight" Name="MainWin" WindowStartupLocation="CenterScreen"
+                  Height="150" Width="300" ResizeMode="NoResize">
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="用户登录">  
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="练习模式"  Source="Pages/Login_user_Training.xaml" />
+                <mui:Link DisplayName="考核模式" Source="Pages/Login_user_Test.xaml"/>
+                <mui:Link DisplayName="用户注册" Source="Pages\Register.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="管理员登录">
+            <mui:LinkGroup.Links>
+                <mui:Link  Source="/Pages/Login_admin.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+
+        <mui:LinkGroup DisplayName="设置" GroupName="设置">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="外观" Source="/Pages/Settings.xaml" />
+                <mui:Link DisplayName="About" Source="/content/About.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="参数设置"  GroupName="参数设置">
+            <mui:LinkGroup.Links>
+                <mui:Link  Source="/Pages/ComStrokeConfig.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+    
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="用户登录" Source="Pages/Login_user_Training.xaml"/>
+        <mui:Link DisplayName="参数设置" Source="/Pages/ComStrokeConfig.xaml" />
+        <mui:Link DisplayName="设置" Source="/Pages/Settings.xaml"  />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>

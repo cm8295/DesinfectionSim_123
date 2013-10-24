@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Disinfection_UI.Pages.ComStrokeConfig"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="180" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <Grid>
+                    <TextBlock HorizontalAlignment="Left" Margin="24,10,0,0" TextWrapping="Wrap" Text="选择COM口号：" VerticalAlignment="Top" Height="18" Width="92"/>
+                    <ComboBox Name="COMcb" HorizontalAlignment="Left" Margin="121,10,0,0" VerticalAlignment="Top" Width="137" Height="20">
+                        <ComboBoxItem Content="COM1" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM2" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM3" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM4" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM5" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM6" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM7" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM8" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM9" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM10" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM11" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM12" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM13" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM14" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="COM15" Width="92" Height="20" Selected="ComboBoxItem_Selected"/>
+                    </ComboBox>
+                    <Button Content="确定" HorizontalAlignment="Left" Margin="182,92,0,-41" VerticalAlignment="Top" Width="76" Height="27" Click="Button_Click"/>
+                    <TextBlock FontSize="13" HorizontalAlignment="Left" Margin="24,58,0,0" TextWrapping="Wrap" Text="棉球接触大小：" VerticalAlignment="Top" Height="18" Width="92"/>
+                    <TextBox Name="tb" HorizontalAlignment="Left" Margin="121,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="137" BorderBrush="#FF4D4F55"/>
+
+                </Grid>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="Disinfection_UI.Content.TrainingWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Title="TrainingWindow" ResizeMode="NoResize" WindowStyle="None" WindowState="Maximized"  PreviewKeyDown="Window_PreviewKeyDown" >
+    <Grid >
+        <ScrollViewer>
+            <StackPanel Name="sta">
+                <Grid >
+                    <Grid  Name="backg" HorizontalAlignment="Center">
+                    </Grid>
+                    <Grid Name="c1g">
+                    <Canvas Name="c1"   Loaded="c1_Loaded"  >
+                        <Canvas.Background>
+                            <SolidColorBrush Color="White" Opacity="0.01"/>
+                        </Canvas.Background>
+                    </Canvas>
+                    </Grid>
+                    <TextBlock Name="Errtb" FontSize="18" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="24" Width="308" Margin="10,754,0,0"/>
+                    <TextBlock Name="tb1" HorizontalAlignment="Left" Margin="10,810,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="100"><Run Language="zh-cn" Text=""/></TextBlock>
+                    <TextBlock Name="test" HorizontalAlignment="Left" Margin="10,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="21" Width="100"/>
+                    <Button Content="退出" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.387,0.316" MouseDoubleClick="Button_MouseDoubleClick"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+        <Button Content="完成" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Height="30" Margin="0,0,10,10" MouseRightButtonDown="Finish_Button_Down"/>
+    </Grid>
+</Window>

@@ -1,0 +1,2 @@
+1、完成了管理员信息的增删查，
+2、添加了自定义窗体Register_Admin.xaml（未用） 和 AdminInforChange.xaml（改变管理员信息）

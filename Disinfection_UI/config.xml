@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SysConfig describe="系统配置">
+  <Admin  name=""/>
+  <COM comnum="3"/>
+  <StrokeThickness st="20"/>
+</SysConfig>
