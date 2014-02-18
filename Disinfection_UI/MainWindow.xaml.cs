@@ -24,7 +24,7 @@ namespace Disinfection_UI
         public MainWindow()
         {
             InitializeComponent();
-            //MainWindow mainwindow = new MainWindow();
+            MainWindow mainwindow = new MainWindow();
 
         }
 
